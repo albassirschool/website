@@ -8,23 +8,28 @@ import { Stats } from '@/components/home/Stats'
 import { getDictionary } from '@/lib/i18n/get-dictionary'
 import type { Locale } from '@/lib/i18n/config'
 
+type Params = Promise<{ lang: Locale }>;
+type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
+
 interface HomePageProps {
-  params: { lang: Locale }
+  params: Params;
+  searchParams?: SearchParams;
 }
 
 export default async function Home({
   params,
 }: HomePageProps) {
-  const dict = await getDictionary(params.lang)
+  const { lang } = await params;
+  const dict = await getDictionary(lang)
 
   return (
     <main>
-      <Hero dict={dict.home.hero} lang={params.lang} />
+      <Hero dict={dict.home.hero} lang={lang} />
       <Stats dict={dict.home.stats} />
       <Features dict={dict.home.features} />
-      <CoursePreview dict={dict.home.courses} lang={params.lang} />
+      <CoursePreview dict={dict.home.courses} lang={lang} />
       <Testimonials dict={dict.home.testimonials} />
-      <CallToAction dict={dict.home.cta} lang={params.lang} />
+      <CallToAction dict={dict.home.cta} lang={lang} />
     </main>
   )
 }

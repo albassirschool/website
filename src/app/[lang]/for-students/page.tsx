@@ -1,3 +1,4 @@
+// src/app/[lang]/for-students/page.tsx
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { Container } from "@/components/shared/Container";
 import { Card } from "@/components/shared/Card";
@@ -5,12 +6,19 @@ import type { Locale } from "@/lib/i18n/config";
 import Link from "next/link";
 import { Button } from "@/components/shared/Button";
 
+type Params = Promise<{ lang: Locale }>;
+type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
+
 interface ForStudentsPageProps {
-  params: { lang: Locale };
+  params: Params;
+  searchParams?: SearchParams;
 }
 
-export default async function ForStudents({ params }: ForStudentsPageProps) {
-  const dict = await getDictionary(params.lang);
+export default async function ForStudents({
+  params,
+}: ForStudentsPageProps) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
   const studentsDict = dict.forStudents;
 
   return (
@@ -32,7 +40,7 @@ export default async function ForStudents({ params }: ForStudentsPageProps) {
           </div>
 
           <div className="text-center">
-            <Link href={`/${params.lang}/contact`}>
+            <Link href={`/${lang}/contact`}>
               <Button size="lg">{studentsDict.cta}</Button>
             </Link>
           </div>

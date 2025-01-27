@@ -1,15 +1,23 @@
+// src/app/[lang]/for-companies/page.tsx
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { Container } from "@/components/shared/Container";
 import { Button } from "@/components/shared/Button";
 import type { Locale } from "@/lib/i18n/config";
 import Link from "next/link";
 
+type Params = Promise<{ lang: Locale }>;
+type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
+
 interface ForCompaniesPageProps {
-  params: { lang: Locale };
+  params: Params;
+  searchParams?: SearchParams;
 }
 
-export default async function ForCompanies({ params }: ForCompaniesPageProps) {
-  const dict = await getDictionary(params.lang);
+export default async function ForCompanies({
+  params,
+}: ForCompaniesPageProps) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
   const companiesDict = dict.forCompanies;
 
   return (
@@ -45,7 +53,7 @@ export default async function ForCompanies({ params }: ForCompaniesPageProps) {
             <p className="text-gray-600 mb-6">
               {companiesDict.cta.description}
             </p>
-            <Link href={`/${params.lang}/contact`}>
+            <Link href={`/${lang}/contact`}>
               <Button size="lg">{companiesDict.cta.button}</Button>
             </Link>
           </div>

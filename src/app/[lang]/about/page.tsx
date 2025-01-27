@@ -4,12 +4,19 @@ import type { Locale } from '@/lib/i18n/config'
 import { Container } from '@/components/shared/Container'
 import Image from 'next/image'
 
+type Params = Promise<{ lang: Locale }>;
+type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
+
+interface AboutPageProps {
+  params: Params;
+  searchParams?: SearchParams;
+}
+
 export default async function About({
   params,
-}: {
-  params: { lang: Locale }
-}) {
-  const dict = await getDictionary(params.lang)
+}: AboutPageProps) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang)
 
   return (
     <div className="w-full min-h-screen bg-white">

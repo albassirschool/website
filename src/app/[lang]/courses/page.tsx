@@ -1,14 +1,22 @@
+// src/app/[lang]/courses/page.tsx
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { Container } from "@/components/shared/Container";
 import { Card } from "@/components/shared/Card";
 import type { Locale } from "@/lib/i18n/config";
 
+type Params = Promise<{ lang: Locale }>;
+type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
+
+interface CoursesPageProps {
+  params: Params;
+  searchParams?: SearchParams;
+}
+
 export default async function Courses({
   params,
-}: {
-  params: { lang: Locale };
-}) {
-  const dict = await getDictionary(params.lang);
+}: CoursesPageProps) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
 
   return (
     <div className="w-full bg-white">
