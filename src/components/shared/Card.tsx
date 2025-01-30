@@ -22,8 +22,8 @@ export function Card({
       )}
       {...props}
     >
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-white-600">{description}</p>
+      <h3 className="text-lg font-semibold mb-2 text-white">{title}</h3>
+      <p className="text-white">{description}</p>
       {children}
     </div>
   )
