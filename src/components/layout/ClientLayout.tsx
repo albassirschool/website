@@ -1,3 +1,4 @@
+// src/components/layout/ClientLayout.tsx
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -20,14 +21,14 @@ export function ClientLayout({ children, dict, lang }: ClientLayoutProps) {
   }, [])
 
   if (!mounted) {
-    return <div className="min-h-screen flex flex-col">{children}</div>
+    return <div className="min-h-screen flex flex-col bg-white">{children}</div>
   }
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col bg-white">
       <Header dict={dict.header} lang={lang} />
       <main className="flex-grow">{children}</main>
       <Footer dict={dict.footer} lang={lang} />
-    </>
+    </div>
   )
 }

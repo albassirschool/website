@@ -20,23 +20,21 @@ export default async function Resources({
   const resourcesDict = dict.resources;
 
   return (
-    <div className="w-full bg-white">
-      <Container className="py-12">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold text-[#202F49] mb-8">
-            {resourcesDict.title}
-          </h1>
+    <Container className="py-12">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-3xl font-bold text-[#202F49] mb-8">
+          {resourcesDict.title}
+        </h1>
 
-          <div className="space-y-8">
-            <DocumentCard
-              title={resourcesDict.catalog.title}
-              description={resourcesDict.catalog.description}
-              downloadUrl="/documents/catalog.pdf"
-              buttonText={resourcesDict.catalog.downloadButton}
-            />
-          </div>
+        <div className="space-y-8">
+          <DocumentCard
+            title={resourcesDict.catalog.title}
+            description={resourcesDict.catalog.description}
+            downloadUrl="/documents/catalog.pdf"
+            buttonText={resourcesDict.catalog.downloadButton}
+          />
         </div>
-      </Container>
-    </div>
+      </div>
+    </Container>
   );
 }
