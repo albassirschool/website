@@ -1,4 +1,3 @@
-// src/components/home/Hero.tsx
 import { Button } from '@/components/shared/Button'
 import { Container } from '@/components/shared/Container'
 import Link from 'next/link'

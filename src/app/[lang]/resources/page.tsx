@@ -1,4 +1,3 @@
-// src/app/[lang]/resources/page.tsx
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { Container } from "@/components/shared/Container";
 import { DocumentCard } from "@/components/resources/DocumentCard";

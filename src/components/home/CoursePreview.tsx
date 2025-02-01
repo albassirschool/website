@@ -1,4 +1,3 @@
-// src/components/home/CoursePreview.tsx
 'use client'
 import { Container } from '@/components/shared/Container'
 import Link from 'next/link'

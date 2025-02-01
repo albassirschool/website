@@ -1,4 +1,3 @@
-// src/components/home/Stats.tsx
 import { Container } from '@/components/shared/Container'
 import type { Dictionary } from '@/types/dictionary'
 

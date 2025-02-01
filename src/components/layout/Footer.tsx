@@ -6,7 +6,7 @@ import type { Locale } from "@/lib/i18n/config";
 
 interface FooterProps {
   dict: Dictionary["footer"];
-  lang: Locale; // Add lang prop
+  lang: Locale;
 }
 
 const socialUrls = {
@@ -16,7 +16,6 @@ const socialUrls = {
 };
 
 export function Footer({ dict, lang }: FooterProps) {
-  // Add lang to props
   if (!dict) {
     return null;
   }

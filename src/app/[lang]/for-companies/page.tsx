@@ -1,4 +1,3 @@
-// src/app/[lang]/for-companies/page.tsx
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { Container } from "@/components/shared/Container";
 import { Button } from "@/components/shared/Button";

@@ -1,4 +1,3 @@
-// src/app/[lang]/page.tsx
 import { Hero } from '@/components/home/Hero'
 import { Features } from '@/components/home/Features'
 import { CoursePreview } from '@/components/home/CoursePreview'

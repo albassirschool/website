@@ -5,7 +5,6 @@ interface SocialIconsProps {
   instagram: string;
   tiktok: string;
   className?: string;
-  // Add variant prop instead of iconClassName
   variant?: "default" | "gray";
 }
 

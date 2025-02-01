@@ -1,4 +1,3 @@
-// src/components/shared/Button.tsx
 import { ComponentPropsWithoutRef } from 'react'
 import { cn } from '@/lib/utils'
 

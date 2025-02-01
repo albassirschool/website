@@ -1,4 +1,3 @@
-// src/components/home/Testimonials.tsx
 import { Container } from '@/components/shared/Container'
 import Image from 'next/image'
 import type { Dictionary } from '@/types/dictionary'
