@@ -152,19 +152,25 @@
         "title": "Développement Web",
         "description": "Apprenez à créer des sites web modernes et réactifs",
         "duration": "6 mois",
-        "level": "Débutant"
+        "level": "Débutant",
+        "image": "/images/courses/web-dev.png",
+        "alt": "Cours de développement web"
       },
       {
         "title": "Marketing Digital",
         "description": "Maîtrisez les outils et stratégies du marketing numérique",
         "duration": "4 mois",
-        "level": "Intermédiaire"
+        "level": "Intermédiaire",
+        "image": "/images/courses/digital-marketing.png",
+        "alt": "Cours de marketing digital"
       },
       {
         "title": "Gestion de Projet",
         "description": "Développez vos compétences en gestion de projet",
         "duration": "3 mois",
-        "level": "Avancé"
+        "level": "Avancé",
+        "image": "/images/courses/project-management.png",
+        "alt": "Cours de gestion de projet"
       }
     ]
   },

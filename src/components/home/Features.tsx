@@ -1,5 +1,3 @@
-
-
 import { Card } from '@/components/shared/Card'
 import { Container } from '@/components/shared/Container'
 import type { Dictionary } from '@/types/dictionary'
@@ -19,6 +17,7 @@ export function Features({ dict }: FeaturesProps) {
               key={index}
               title={item.title}
               description={item.description}
+              variant="dark"
             />
           ))}
         </div>

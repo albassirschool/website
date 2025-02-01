@@ -152,19 +152,25 @@
         "title": "تطوير الويب",
         "description": "تعلم إنشاء مواقع ويب حديثة وتفاعلية",
         "duration": "6 أشهر",
-        "level": "مبتدئ"
+        "level": "مبتدئ",
+        "image": "/images/courses/web-dev.png",
+        "alt": "دورة تطوير الويب"
       },
       {
         "title": "التسويق الرقمي",
         "description": "إتقان أدوات واستراتيجيات التسويق الرقمي",
         "duration": "4 أشهر",
-        "level": "متوسط"
+        "level": "متوسط",
+        "image": "/images/courses/digital-marketing.png",
+        "alt": "دورة التسويق الرقمي"
       },
       {
         "title": "إدارة المشاريع",
         "description": "تطوير مهاراتك في إدارة المشاريع",
         "duration": "3 أشهر",
-        "level": "متقدم"
+        "level": "متقدم",
+        "image": "/images/courses/project-management.png",
+        "alt": "دورة إدارة المشاريع"
       }
     ]
   },

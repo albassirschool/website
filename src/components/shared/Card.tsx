@@ -1,10 +1,16 @@
 import { cn } from '@/lib/utils'
+import Image from 'next/image'
 
 interface CardProps {
   title: string
   description: string
   className?: string
   children?: React.ReactNode
+  variant?: 'white' | 'dark'
+  image?: {
+    src: string
+    alt: string
+  }
 }
 
 export function Card({
@@ -12,19 +18,45 @@ export function Card({
   description,
   className,
   children,
+  variant = 'dark',
+  image,
   ...props
 }: CardProps) {
   return (
     <div
       className={cn(
-        'rounded-lg border border-gray-200 p-6 shadow-sm',
+        'flex flex-col rounded-lg overflow-hidden',
+        variant === 'dark' ? 'bg-[#1A237E]' : 'bg-white',
+        'border border-gray-200 shadow-sm hover:shadow-md transition-shadow',
         className
       )}
       {...props}
     >
-      <h3 className="text-lg font-semibold mb-2 text-white">{title}</h3>
-      <p className="text-white">{description}</p>
-      {children}
+      {image && (
+        <div className="relative h-48 w-full">
+          <Image
+            src={image.src}
+            alt={image.alt}
+            fill
+            className="object-cover"
+          />
+        </div>
+      )}
+      <div className="p-6 flex-1 flex flex-col">
+        <h3 className={cn(
+          'text-xl font-semibold mb-2',
+          variant === 'dark' ? 'text-white' : 'text-black'
+        )}>
+          {title}
+        </h3>
+        <p className={cn(
+          'mb-4',
+          variant === 'dark' ? 'text-white' : 'text-gray-600'
+        )}>
+          {description}
+        </p>
+        {children}
+      </div>
     </div>
   )
 }
