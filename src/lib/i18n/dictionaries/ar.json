@@ -53,6 +53,75 @@
         }
       ]
     },
+    "partners": {
+      "title": "يثقون بنا",
+      "companies": [
+        {
+          "name": "اتصالات الجزائر",
+          "logo": "/images/partners/algerie-telecom.png"
+        },
+        {
+          "name": "مجمع مشري",
+          "logo": "/images/partners/groupe-mecherii.png"
+        },
+        {
+          "name": "تريفيسود",
+          "logo": "/images/partners/trefisoud.png"
+        },
+        {
+          "name": "مامي",
+          "logo": "/images/partners/mami.png"
+        },
+        {
+          "name": "صيدال",
+          "logo": "/images/partners/saidal.png"
+        },
+        {
+          "name": "المديرية العامة للجمارك",
+          "logo": "/images/partners/douane.png"
+        },
+        {
+          "name": "شركة التنمية و التنمية الريفية سطيف",
+          "logo": "/images/partners/emivar-setif.png"
+        },
+        {
+          "name": "الوكالة الوطنية لدعم تشغيل الشباب",
+          "logo": "/images/partners/ansej.png"
+        },
+        {
+          "name": "المجموعة الصناعية للورق والسليلوز",
+          "logo": "/images/partners/gipec.png"
+        },
+        {
+          "name": "انابيب",
+          "logo": "/images/partners/anabib.png"
+        },
+        {
+          "name": "بتيكومبوس",
+          "logo": "/images/partners/baticompos.png"
+        },
+        {
+          "name": "كوندور",
+          "logo": "/images/partners/condor.png"
+        },
+        {
+          "name": "جيون",
+          "logo": "/images/partners/geant.png"
+        },
+        {
+          "name": "ميديا",
+          "logo": "/images/partners/midea.png"
+        },
+        {
+          "name": "إمباج",
+          "logo": "/images/partners/embag.png"
+        },
+        {
+          "name": "فالكو",
+          "logo": "/images/partners/falco.png"
+        }
+      ]
+    },
     "courses": {
       "title": "دوراتنا المميزة",
       "subtitle": "اكتشف برامجنا التدريبية الأكثر شعبية",

@@ -53,6 +53,75 @@
         }
       ]
     },
+    "partners": {
+      "title": "Ils nous font confiance",
+      "companies": [
+        {
+          "name": "Algérie Télécom",
+          "logo": "/images/partners/algerie-telecom.png"
+        },
+        {
+          "name": "Groupe Mecheri",
+          "logo": "/images/partners/groupe-mecherii.png"
+        },
+        {
+          "name": "Trefisoud",
+          "logo": "/images/partners/trefisoud.png"
+        },
+        {
+          "name": "Mami",
+          "logo": "/images/partners/mami.png"
+        },
+        {
+          "name": "Saidal",
+          "logo": "/images/partners/saidal.png"
+        },
+        {
+          "name": "Direction générale des douanes",
+          "logo": "/images/partners/douane.png"
+        },
+        {
+          "name": "EMIVAR Setif",
+          "logo": "/images/partners/emivar-setif.png"
+        },
+        {
+          "name": "ANSEJ",
+          "logo": "/images/partners/ansej.png"
+        },
+        {
+          "name": "GIPEC",
+          "logo": "/images/partners/gipec.png"
+        },
+        {
+          "name": "ANABIB",
+          "logo": "/images/partners/anabib.png"
+        },
+        {
+          "name": "BATICOMPOS",
+          "logo": "/images/partners/baticompos.png"
+        },
+        {
+          "name": "Condor",
+          "logo": "/images/partners/condor.png"
+        },
+        {
+          "name": "Géant",
+          "logo": "/images/partners/geant.png"
+        },
+        {
+          "name": "Midea",
+          "logo": "/images/partners/midea.png"
+        },
+        {
+          "name": "Embag",
+          "logo": "/images/partners/embag.png"
+        },
+        {
+          "name": "Falco",
+          "logo": "/images/partners/falco.png"
+        }
+      ]
+    },
     "courses": {
       "title": "Nos formations phares",
       "subtitle": "Découvrez nos programmes de formation les plus populaires",
@@ -290,4 +359,4 @@
     },
     "copyright": "© {year} Al Bassir School. Tous droits réservés."
   }
- }
+}
