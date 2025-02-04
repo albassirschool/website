@@ -6,6 +6,7 @@ import { CallToAction } from '@/components/home/CallToAction'
 import { Stats } from '@/components/home/Stats'
 import { getDictionary } from '@/lib/i18n/get-dictionary'
 import type { Locale } from '@/lib/i18n/config'
+import { Partners } from '@/components/home/Partners'
 
 type Params = Promise<{ lang: Locale }>;
 type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
@@ -25,6 +26,7 @@ export default async function Home({
     <main>
       <Hero dict={dict.home.hero} lang={lang} />
       <Stats dict={dict.home.stats} />
+      <Partners dict={dict.home.partners} />
       <Features dict={dict.home.features} />
       <CoursePreview dict={dict.home.courses} lang={lang} />
       <Testimonials dict={dict.home.testimonials} lang={lang} />

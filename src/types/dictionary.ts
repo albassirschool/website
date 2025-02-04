@@ -1,3 +1,4 @@
+// src/types/dictionary.ts
 export interface Dictionary {
   header: {
     nav: {
@@ -27,6 +28,13 @@ export interface Dictionary {
       items: Array<{
         title: string;
         description: string;
+      }>;
+    };
+    partners: {
+      title: string;
+      companies: Array<{
+        name: string;
+        logo: string;
       }>;
     };
     courses: {
@@ -90,6 +98,8 @@ export interface Dictionary {
       description: string;
       duration: string;
       level: string;
+      image: string;
+      alt: string;
     }>;
   };
   forCompanies: {
