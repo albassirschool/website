@@ -1,0 +1,304 @@
+{
+  "title": "Nos formations",
+  "subtitle": "Découvrez nos programmes de formation",
+  "viewAll": "Voir toutes nos formations",
+  "coursesData": {
+    "gestion-des-ressources-humaines": {
+      "title": "Gestion des Ressources Humaines",
+      "description": "Apprenez les meilleures pratiques en matière de gestion des RH",
+      "price": "À partir de 45000 DA",
+      "duration": "6 mois",
+      "instructor": "Sarah Martin",
+      "level": "Débutant",
+      "certificate": "Certificat professionnel",
+      "image": "/images/courses/grh.png",
+      "alt": "Cours de Gestion des Ressources Humaines",
+      "content": {
+        "title": "Contenu du cours",
+        "items": [
+          "Fondements de la GRH",
+          "Recrutement et sélection",
+          "Gestion de la performance",
+          "Formation et développement",
+          "Rémunération et avantages sociaux",
+          "Relations de travail"
+        ]
+      },
+      "objectives": {
+        "title": "Objectifs d'apprentissage",
+        "items": [
+          "Comprendre les processus RH",
+          "Gérer le cycle de vie des employés",
+          "Développer des stratégies RH",
+          "Maîtriser la législation du travail",
+          "Optimiser la gestion des talents"
+        ]
+      },
+      "cta": "S'inscrire maintenant"
+    },
+    "bureautique": {
+      "title": "Bureautique (Niveau 1 et 2)",
+      "description": "Maîtrisez les outils bureautiques essentiels",
+      "price": "À partir de 35000 DA",
+      "duration": "4 mois",
+      "instructor": "Pierre Dupont",
+      "level": "Intermédiaire",
+      "certificate": "Certificat professionnel",
+      "image": "/images/courses/bureautique.png",
+      "alt": "Cours de bureautique",
+      "content": {
+        "title": "Contenu du cours",
+        "items": [
+          "Microsoft Word avancé",
+          "Excel et analyse de données",
+          "PowerPoint professionnel",
+          "Outlook et gestion du temps",
+          "Access (bases de données)",
+          "Outils collaboratifs Microsoft 365"
+        ]
+      },
+      "objectives": {
+        "title": "Objectifs d'apprentissage",
+        "items": [
+          "Maîtriser la suite Microsoft Office",
+          "Créer des documents professionnels",
+          "Analyser des données avec Excel",
+          "Concevoir des présentations efficaces",
+          "Gérer des projets avec les outils bureautiques"
+        ]
+      },
+      "cta": "S'inscrire maintenant"
+    },
+    "comptabilite": {
+      "title": "Comptabilité",
+      "description": "Apprenez les principes fondamentaux de la comptabilité",
+      "price": "À partir de 40000 DA",
+      "duration": "3 mois",
+      "instructor": "Ahmed Benali",
+      "level": "Avancé",
+      "certificate": "Certificat professionnel",
+      "image": "/images/courses/comptabilite.png",
+      "alt": "Cours de comptabilité",
+      "content": {
+        "title": "Contenu du cours",
+        "items": [
+          "Principes comptables fondamentaux",
+          "Comptabilité générale",
+          "Comptabilité analytique",
+          "Fiscalité des entreprises",
+          "Analyse financière",
+          "Logiciels de comptabilité"
+        ]
+      },
+      "objectives": {
+        "title": "Objectifs d'apprentissage",
+        "items": [
+          "Tenir une comptabilité complète",
+          "Établir les états financiers",
+          "Analyser la santé financière",
+          "Gérer la fiscalité d'entreprise",
+          "Utiliser les logiciels comptables"
+        ]
+      },
+      "cta": "S'inscrire maintenant"
+    },
+    "developpement-web": {
+      "title": "Développement Web",
+      "description": "Apprenez à créer des sites web modernes et réactifs",
+      "price": "À partir de 50000 DA",
+      "duration": "6 mois",
+      "instructor": "John Doe",
+      "level": "Débutant",
+      "certificate": "Certificat professionnel",
+      "image": "/images/courses/developpement-web.png",
+      "alt": "Cours de développement web",
+      "content": {
+        "title": "Contenu du cours",
+        "items": [
+          "HTML5 et CSS3",
+          "JavaScript et ES6+",
+          "React.js",
+          "Node.js et Express",
+          "Bases de données SQL et NoSQL",
+          "Déploiement et hébergement"
+        ]
+      },
+      "objectives": {
+        "title": "Objectifs d'apprentissage",
+        "items": [
+          "Créer des sites web responsives",
+          "Maîtriser les frameworks modernes",
+          "Développer des API RESTful",
+          "Gérer des bases de données",
+          "Déployer des applications web"
+        ]
+      },
+      "cta": "S'inscrire maintenant"
+    },
+    "developpement-logiciel": {
+      "title": "Développement Logiciel",
+      "description": "Maîtrisez les langages de programmation et les outils de développement",
+      "price": "À partir de 50000 DA",
+      "duration": "6 mois",
+      "instructor": "Thomas Weber",
+      "level": "Débutant",
+      "certificate": "Certificat professionnel",
+      "image": "/images/courses/software-dev.png",
+      "alt": "Cours de développement logiciel",
+      "content": {
+        "title": "Contenu du cours",
+        "items": [
+          "Algorithmes et structures de données",
+          "Programmation orientée objet",
+          "Java et Spring Framework",
+          "Bases de données relationnelles",
+          "Tests et débogage",
+          "Méthodes agiles"
+        ]
+      },
+      "objectives": {
+        "title": "Objectifs d'apprentissage",
+        "items": [
+          "Concevoir des applications robustes",
+          "Maîtriser la POO",
+          "Développer en Java",
+          "Gérer des bases de données",
+          "Appliquer les bonnes pratiques"
+        ]
+      },
+      "cta": "S'inscrire maintenant"
+    },
+    "vendeur-en-pharmacie": {
+      "title": "Vendeur en Pharmacie",
+      "description": "Apprenez les bases de la vente en pharmacie",
+      "price": "À partir de 35000 DA",
+      "duration": "4 mois",
+      "instructor": "Dr. Marie Laurent",
+      "level": "Intermédiaire",
+      "certificate": "Certificat professionnel",
+      "image": "/images/courses/vendeur-pharmacie.png",
+      "alt": "Cours de vendeur en pharmacie",
+      "content": {
+        "title": "Contenu du cours",
+        "items": [
+          "Connaissances des médicaments",
+          "Conseil client en pharmacie",
+          "Gestion des stocks",
+          "Réglementation pharmaceutique",
+          "Marketing en pharmacie",
+          "Hygiène et sécurité"
+        ]
+      },
+      "objectives": {
+        "title": "Objectifs d'apprentissage",
+        "items": [
+          "Conseiller efficacement les clients",
+          "Gérer les produits pharmaceutiques",
+          "Appliquer les normes d'hygiène",
+          "Optimiser les ventes",
+          "Comprendre la réglementation"
+        ]
+      },
+      "cta": "S'inscrire maintenant"
+    },
+    "management": {
+      "title": "Management",
+      "description": "Développez vos compétences en leadership et en gestion d'équipe",
+      "price": "À partir de 45000 DA",
+      "duration": "3 mois",
+      "instructor": "Jean Durand",
+      "level": "Avancé",
+      "certificate": "Certificat professionnel",
+      "image": "/images/courses/management.png",
+      "alt": "Cours de management",
+      "content": {
+        "title": "Contenu du cours",
+        "items": [
+          "Leadership et motivation",
+          "Gestion d'équipe",
+          "Communication managériale",
+          "Gestion du changement",
+          "Stratégie d'entreprise",
+          "Performance organisationnelle"
+        ]
+      },
+      "objectives": {
+        "title": "Objectifs d'apprentissage",
+        "items": [
+          "Diriger efficacement une équipe",
+          "Développer son leadership",
+          "Gérer les conflits",
+          "Améliorer la performance",
+          "Conduire le changement"
+        ]
+      },
+      "cta": "S'inscrire maintenant"
+    },
+    "marketing-digital": {
+      "title": "Marketing Digital",
+      "description": "Maîtrisez les outils et stratégies du marketing numérique",
+      "price": "À partir de 45000 DA",
+      "duration": "4 mois",
+      "instructor": "Jane Smith",
+      "level": "Intermédiaire",
+      "certificate": "Certificat professionnel",
+      "image": "/images/courses/marketing-digital.png",
+      "alt": "Cours de marketing digital",
+      "content": {
+        "title": "Contenu du cours",
+        "items": [
+          "SEO et SEM",
+          "Marketing des réseaux sociaux",
+          "Marketing par e-mail",
+          "Publicité en ligne",
+          "Analyse de données",
+          "Stratégie de contenu"
+        ]
+      },
+      "objectives": {
+        "title": "Objectifs d'apprentissage",
+        "items": [
+          "Optimiser le référencement",
+          "Gérer les campagnes publicitaires",
+          "Analyser les données marketing",
+          "Créer des stratégies de contenu",
+          "Mesurer le ROI"
+        ]
+      },
+      "cta": "S'inscrire maintenant"
+    },
+    "gestion-de-projet": {
+      "title": "Gestion de Projet",
+      "description": "Développez vos compétences en gestion de projet",
+      "price": "À partir de 40000 DA",
+      "duration": "3 mois",
+      "instructor": "Marie Dubois",
+      "level": "Avancé",
+      "certificate": "Certificat professionnel",
+      "image": "/images/courses/gestion-de-projet.png",
+      "alt": "Cours de gestion de projet",
+      "content": {
+        "title": "Contenu du cours",
+        "items": [
+          "Méthodologies agiles",
+          "Gestion des risques",
+          "Planification de projet",
+          "Gestion d'équipe",
+          "Budgétisation",
+          "Outils de gestion de projet"
+        ]
+      },
+      "objectives": {
+        "title": "Objectifs d'apprentissage",
+        "items": [
+          "Diriger des projets complexes",
+          "Gérer les équipes efficacement",
+          "Maîtriser les méthodologies agiles",
+          "Optimiser les ressources",
+          "Gérer les parties prenantes"
+        ]
+      },
+      "cta": "S'inscrire maintenant"
+    }
+  }
+}

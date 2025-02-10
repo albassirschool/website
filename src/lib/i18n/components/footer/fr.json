@@ -1,0 +1,25 @@
+{
+  "address": "Cité BELAYADHI Lot 74 Bordj Bou Arreridj",
+  "phone": "+213 6 72 40 62 78",
+  "email": "albassirschool34@gmail.com",
+  "copyright": "© {year} Al Bassir School. Tous droits réservés.",
+  "social": {
+    "title": "Suivez-nous",
+    "links": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    }
+  },
+  "legal": {
+    "title": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  },
+  "quickLinks": {
+    "title": "Liens rapides",
+    "about": "À propos",
+    "courses": "Formations",
+    "contact": "Contact"
+  }
+}

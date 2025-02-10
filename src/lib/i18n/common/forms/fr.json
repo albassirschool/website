@@ -1,0 +1,20 @@
+{
+  "labels": {
+    "name": "Nom",
+    "email": "Email",
+    "subject": "Sujet",
+    "message": "Message",
+    "phone": "Téléphone"
+  },
+  "placeholders": {
+    "name": "Votre nom",
+    "email": "votre@email.com",
+    "subject": "Sujet de votre message",
+    "message": "Votre message"
+  },
+  "validation": {
+    "required": "Ce champ est requis",
+    "invalidEmail": "Email invalide",
+    "minLength": "Minimum {0} caractères"
+  }
+}

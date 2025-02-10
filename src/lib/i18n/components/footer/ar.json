@@ -1,0 +1,25 @@
+{
+  "address": "حي بلعيدي قطعة 74 برج بوعريريج",
+  "phone": "+213 6 72 40 62 78",
+  "email": "albassirschool34@gmail.com",
+  "copyright": "© {year} مدرسة البصير. جميع الحقوق محفوظة.",
+  "social": {
+    "title": "تابعنا",
+    "links": {
+      "facebook": "فيسبوك",
+      "instagram": "انستغرام",
+      "tiktok": "تيك توك"
+    }
+  },
+  "legal": {
+    "title": "قانوني",
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الاستخدام"
+  },
+  "quickLinks": {
+    "title": "روابط سريعة",
+    "about": "من نحن",
+    "courses": "الدورات",
+    "contact": "اتصل بنا"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Ressources pédagogiques",
+  "catalog": {
+    "title": "Catalogue des formations",
+    "description": "Découvrez notre catalogue complet des formations disponibles",
+    "downloadButton": "Télécharger le catalogue"
+  },
+  "documentation": {
+    "title": "Documentation",
+    "description": "Accédez à nos ressources pédagogiques"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "description": "Trouvez les réponses à vos questions"
+  }
+}

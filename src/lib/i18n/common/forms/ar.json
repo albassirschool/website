@@ -1,0 +1,20 @@
+{
+  "labels": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "subject": "الموضوع",
+    "message": "الرسالة",
+    "phone": "الهاتف"
+  },
+  "placeholders": {
+    "name": "اسمك",
+    "email": "بريدك@الإلكتروني.com",
+    "subject": "موضوع رسالتك",
+    "message": "رسالتك"
+  },
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "invalidEmail": "بريد إلكتروني غير صالح",
+    "minLength": "الحد الأدنى {0} أحرف"
+  }
+}

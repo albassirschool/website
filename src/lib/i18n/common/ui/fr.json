@@ -1,0 +1,21 @@
+{
+  "labels": {
+    "duration": "Durée",
+    "level": "Niveau",
+    "price": "Prix",
+    "instructor": "Formateur",
+    "certificate": "Certificat"
+  },
+  "cta": {
+    "contact": "Nous contacter",
+    "viewCourses": "Voir les formations",
+    "getQuote": "Demander un devis",
+    "learnMore": "En savoir plus"
+  },
+  "buttons": {
+    "submit": "Envoyer",
+    "download": "Télécharger",
+    "close": "Fermer",
+    "back": "Retour"
+  }
+}

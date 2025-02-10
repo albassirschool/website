@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "courses": "Formations",
+    "forStudents": "Pour les étudiants",
+    "forCompanies": "Pour les entreprises",
+    "contact": "Contact",
+    "resources": "Ressources"
+  },
+  "logo": {
+    "alt": "Al Bassir School"
+  },
+  "mobileMenu": {
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "languageSwitcher": {
+    "label": "Changer de langue",
+    "french": "Français",
+    "arabic": "العربية"
+  }
+}

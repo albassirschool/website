@@ -1,0 +1,33 @@
+{
+  "title": "Contactez-nous",
+  "subtitle": "Nous sommes là pour vous aider",
+  "info": {
+    "title": "Informations de contact",
+    "address": {
+      "title": "Adresse",
+      "line": "Cité BELAYADHI Lot 74 Bordj Bou Arreridj"
+    },
+    "phone": {
+      "title": "Téléphone",
+      "number": "+213 6 72 40 62 78"
+    },
+    "email": {
+      "title": "Email",
+      "address": "albassirschool34@gmail.com"
+    },
+    "hours": {
+      "title": "Heures d'ouverture",
+      "schedule": "Du dimanche au jeudi: 8h00 - 17h00"
+    }
+  },
+  "form": {
+    "title": "Envoyez-nous un message",
+    "name": "Nom",
+    "email": "Email",
+    "subject": "Sujet",
+    "message": "Message",
+    "submit": "Envoyer",
+    "success": "Votre message a été envoyé avec succès",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  }
+}

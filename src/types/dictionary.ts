@@ -1,4 +1,4 @@
-// src/types/dictionary.ts
+// Source: src/types/dictionary.ts
 export interface Dictionary {
   header: {
     nav: {
@@ -9,6 +9,18 @@ export interface Dictionary {
       forCompanies: string;
       contact: string;
       resources: string;
+    };
+    logo: {
+      alt: string;
+    };
+    mobileMenu: {
+      openMenu: string;
+      closeMenu: string;
+    };
+    languageSwitcher: {
+      label: string;
+      french: string;
+      arabic: string;
     };
   };
   home: {
@@ -36,20 +48,6 @@ export interface Dictionary {
         name: string;
         logo: string;
       }>;
-    };
-    courses: {
-      title: string;
-      subtitle: string;
-      duration: string;
-      level: string;
-      featured: Array<{
-        title: string;
-        description: string;
-        duration: string;
-        level: string;
-        image: string;
-      }>;
-      viewAll: string;
     };
     testimonials: {
       title: string;
@@ -81,27 +79,74 @@ export interface Dictionary {
   };
   contact: {
     title: string;
+    subtitle: string;
+    info: {
+      title: string;
+      address: {
+        title: string;
+        line: string;
+      };
+      phone: {
+        title: string;
+        number: string;
+      };
+      email: {
+        title: string;
+        address: string;
+      };
+      hours: {
+        title: string;
+        schedule: string;
+      };
+    };
     form: {
+      title: string;
       name: string;
       email: string;
       subject: string;
       message: string;
       submit: string;
+      success: string;
+      error: string;
     };
   };
   courses: {
     title: string;
-    duration: string;
-    level: string;
-    items: Array<{
+    subtitle: string;
+    viewAll: string;
+    preview: Array<{
       title: string;
       description: string;
       duration: string;
       level: string;
       image: string;
-      alt: string;
+      alt?: string;
+      slug: string;
     }>;
+    coursesData: {
+      [slug: string]: {
+        title: string;
+        description: string;
+        price: string;
+        duration: string;
+        instructor: string;
+        level: string;
+        certificate: string;
+        image: string;
+        alt?: string;
+        content: {
+          title: string;
+          items: string[];
+        };
+        objectives: {
+          title: string;
+          items: string[];
+        };
+        cta: string;
+      };
+    };
   };
+
   forCompanies: {
     title: string;
     subtitle: string;
@@ -116,6 +161,7 @@ export interface Dictionary {
       button: string;
     };
   };
+
   forStudents: {
     title: string;
     subtitle: string;
@@ -150,6 +196,7 @@ export interface Dictionary {
     address: string;
     phone: string;
     email: string;
+    copyright: string;
     social: {
       title: string;
       links: {
@@ -165,10 +212,9 @@ export interface Dictionary {
     };
     quickLinks: {
       title: string;
-      about: string;
-      courses: string;
-      contact: string;
-    }
-    copyright: string;
+      about?: string;
+      courses?: string;
+      contact?: string;
+    };
   };
 }

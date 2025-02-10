@@ -1,0 +1,16 @@
+{
+  "main": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "courses": "الدورات",
+    "forStudents": "للطلاب",
+    "forCompanies": "للشركات",
+    "contact": "اتصل بنا",
+    "resources": "الموارد"
+  },
+  "footer": {
+    "quickLinks": "روابط سريعة",
+    "legal": "قانوني",
+    "social": "تابعنا"
+  }
+}

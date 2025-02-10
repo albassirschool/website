@@ -1,0 +1,16 @@
+{
+  "main": {
+    "home": "Accueil",
+    "about": "À propos",
+    "courses": "Formations",
+    "forStudents": "Pour les étudiants",
+    "forCompanies": "Pour les entreprises",
+    "contact": "Contact",
+    "resources": "Ressources"
+  },
+  "footer": {
+    "quickLinks": "Liens rapides",
+    "legal": "Mentions légales",
+    "social": "Suivez-nous"
+  }
+}

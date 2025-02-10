@@ -1,0 +1,20 @@
+{
+  "title": "À propos de Al Bassir School",
+  "content": [
+    "Al Bassir School est un centre de formation professionnelle de premier plan, engagé dans l'excellence éducative depuis sa création.",
+    "Notre mission est de former la prochaine génération de professionnels qualifiés, en leur fournissant les compétences et les connaissances nécessaires pour réussir dans leur carrière."
+  ],
+  "mission": {
+    "title": "Notre mission",
+    "content": "Former des professionnels compétents et qualifiés, capables de répondre aux exigences du marché du travail moderne."
+  },
+  "values": {
+    "title": "Nos valeurs",
+    "items": [
+      "Excellence dans l'enseignement",
+      "Innovation pédagogique",
+      "Accompagnement personnalisé",
+      "Engagement envers la réussite des étudiants"
+    ]
+  }
+}

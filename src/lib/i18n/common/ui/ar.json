@@ -1,0 +1,21 @@
+{
+  "labels": {
+    "duration": "المدة",
+    "level": "المستوى",
+    "price": "السعر",
+    "instructor": "المدرب",
+    "certificate": "الشهادة"
+  },
+  "cta": {
+    "contact": "اتصل بنا",
+    "viewCourses": "عرض الدورات",
+    "getQuote": "طلب عرض سعر",
+    "learnMore": "اكتشف المزيد"
+  },
+  "buttons": {
+    "submit": "إرسال",
+    "download": "تحميل",
+    "close": "إغلاق",
+    "back": "رجوع"
+  }
+}

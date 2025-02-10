@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "courses": "الدورات",
+    "forStudents": "للطلاب",
+    "forCompanies": "للشركات",
+    "contact": "اتصل بنا",
+    "resources": "الموارد"
+  },
+  "logo": {
+    "alt": "مدرسة البصير"
+  },
+  "mobileMenu": {
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة"
+  },
+  "languageSwitcher": {
+    "label": "تغيير اللغة",
+    "french": "الفرنسية",
+    "arabic": "العربية"
+  }
+}

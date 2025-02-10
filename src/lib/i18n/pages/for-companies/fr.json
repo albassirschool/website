@@ -1,0 +1,41 @@
+{
+  "title": "Solutions pour les entreprises",
+  "subtitle": "Des formations sur mesure pour vos équipes",
+  "services": [
+    {
+      "title": "Formation sur site",
+      "description": "Des formations personnalisées dispensées dans vos locaux",
+      "benefits": [
+        "Programmes adaptés à vos besoins spécifiques",
+        "Flexibilité des horaires",
+        "Réduction des coûts de déplacement",
+        "Formation pratique sur vos outils"
+      ]
+    },
+    {
+      "title": "Séminaires spécialisés",
+      "description": "Des sessions intensives sur des sujets spécifiques",
+      "benefits": [
+        "Expertise pointue",
+        "Cas pratiques issus de votre secteur",
+        "Documentation détaillée",
+        "Suivi post-formation"
+      ]
+    },
+    {
+      "title": "Coaching d'équipe",
+      "description": "Accompagnement personnalisé pour vos collaborateurs",
+      "benefits": [
+        "Développement des compétences managériales",
+        "Amélioration de la cohésion d'équipe",
+        "Suivi individuel et collectif",
+        "Évaluation des progrès"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Intéressé par nos solutions entreprise ?",
+    "description": "Contactez-nous pour discuter de vos besoins en formation",
+    "button": "Demander un devis"
+  }
+}
