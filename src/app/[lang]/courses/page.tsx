@@ -16,14 +16,18 @@ export default async function Courses({
 }: CoursesPageProps) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
+  const courses = Object.entries(dict.courses.coursesData).map(([slug, course]) => ({
+    ...course,
+    slug
+  }));
 
   return (
     <Container className="py-12">
       <h1 className="text-3xl font-bold mb-8 text-[#202F49]">{dict.courses.title}</h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {dict.courses.items.map((course, index) => (
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
+        {courses.map((course) => (
           <Card
-            key={index}
+            key={course.slug}
             title={course.title}
             description={course.description}
             variant="white"
@@ -31,14 +35,15 @@ export default async function Courses({
               src: course.image,
               alt: course.alt || course.title
             }}
+            href={`/${lang}/courses/${course.slug}`}
             className="hover:shadow-md transition-shadow"
           >
             <div className="mt-4 space-y-2">
               <p className="text-sm text-gray-500">
-                {dict.courses.duration}: {course.duration}
+                {course.duration}
               </p>
               <p className="text-sm text-gray-500">
-                {dict.courses.level}: {course.level}
+                {course.level}
               </p>
             </div>
           </Card>
