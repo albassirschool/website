@@ -6,11 +6,19 @@ import type { Dictionary } from '@/types/dictionary'
 import type { Locale } from '@/lib/i18n/config'
 
 interface CoursePreviewProps {
-  dict: Dictionary['home']['courses']
+  dict: Dictionary['courses']
   lang: Locale
 }
 
 export function CoursePreview({ dict, lang }: CoursePreviewProps) {
+  // Take first 3 courses from coursesData
+  const previewCourses = Object.entries(dict.coursesData || {})
+    .slice(0, 3)
+    .map(([slug, course]) => ({
+      ...course,
+      slug
+    }));
+
   return (
     <div className="bg-gray-50 py-20">
       <Container>
@@ -21,14 +29,14 @@ export function CoursePreview({ dict, lang }: CoursePreviewProps) {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {dict.featured.map((course, index) => (
-            <Link href={`/${lang}/courses/${course.title.toLowerCase().replace(/\s+/g, '-')}`} key={index}>
-              <div className="flex flex-col bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
+          {previewCourses.map((course) => (
+            <Link href={`/${lang}/courses/${course.slug}`} key={course.slug}>
+              <div className="flex flex-col bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow h-full">
                 <div className="relative h-48">
                   <Image
                     src={course.image}
-                    alt={course.title}
+                    alt={course.alt || course.title}
                     fill
                     className="object-cover"
                   />
@@ -38,10 +46,10 @@ export function CoursePreview({ dict, lang }: CoursePreviewProps) {
                   <p className="text-gray-800 mb-4 flex-1">{course.description}</p>
                   <div className="flex justify-between items-center text-sm">
                     <span className="text-gray-700">
-                      {dict.duration}: {course.duration}
+                      {course.duration}
                     </span>
                     <span className="text-gray-700">
-                      {dict.level}: {course.level}
+                      {course.level}
                     </span>
                   </div>
                 </div>
