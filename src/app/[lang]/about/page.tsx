@@ -33,7 +33,7 @@ export default async function About({
               />
             </div>
             <div className="space-y-6 text-black">
-              {dict.about.content.map((paragraph: string, index: number) => (
+              {dict.about.content?.map((paragraph: string, index: number) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
@@ -44,7 +44,7 @@ export default async function About({
             <div className="mt-12">
               <h2 className="text-2xl font-bold text-[#202F49] mb-4">{dict.about.values.title}</h2>
               <ul className="list-disc pl-6 space-y-2 text-black">
-                {dict.about.values.items.map((item: string, index: number) => (
+                {dict.about.values.items?.map((item: string, index: number) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
