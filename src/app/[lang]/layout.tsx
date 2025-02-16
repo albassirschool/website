@@ -5,13 +5,14 @@ import type { Dictionary } from '@/types/dictionary'
 
 interface LocaleLayoutProps {
   children: React.ReactNode
-  params: { lang: Locale }
+  params: Promise<{ lang: Locale }>
 }
 
 export default async function LocaleLayout({
   children,
-  params: { lang },
+  params,
 }: LocaleLayoutProps) {
+  const { lang } = await params
   const dict = await getDictionary(lang) as Dictionary
 
   return <ClientLayout dict={dict} lang={lang}>{children}</ClientLayout>
