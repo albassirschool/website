@@ -16,11 +16,12 @@ export default async function Resources({
 }: ResourcesPageProps) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
+  const isRTL = lang === 'ar';
   const resourcesDict = dict.resources;
 
   return (
     <Container className="py-12">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto" dir={isRTL ? 'rtl' : 'ltr'}>
         <h1 className="text-3xl font-bold text-[#202F49] mb-8">
           {resourcesDict.title}
         </h1>
