@@ -1,3 +1,4 @@
+// src/components/layout/Footer.tsx
 import { Container } from "@/components/shared/Container";
 import { SocialIcons } from "@/components/shared/SocialIcons";
 import Link from "next/link";
@@ -11,8 +12,8 @@ interface FooterProps {
 
 const socialUrls = {
   facebook: "https://facebook.com/albassir34",
-  instagram: "https://www.instagram.com/albassir.schoolbba",
-  tiktok: "https://www.tiktok.com/@albassir.academy",
+  instagram: "https://www.instagram.com/albassir__school",
+  tiktok: "https://www.tiktok.com/@albassir.school",
 };
 
 export function Footer({ dict, lang }: FooterProps) {
@@ -36,7 +37,7 @@ export function Footer({ dict, lang }: FooterProps) {
                 rel="noopener noreferrer"
                 className="hover:text-gray-900"
               >
-                {dict.address && <p>{dict.address}</p>}
+                {dict.address}
               </a>
               {dict.phone && (
                 <p>
