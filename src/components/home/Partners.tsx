@@ -7,6 +7,10 @@ interface PartnersProps {
 }
 
 export function Partners({ dict }: PartnersProps) {
+  if (!dict?.companies) {
+    return null
+  }
+
   const formattedLogos = dict.companies.map(company => ({
     src: company.logo,
     alt: company.name
