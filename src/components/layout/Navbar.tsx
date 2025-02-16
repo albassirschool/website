@@ -17,7 +17,7 @@ export function Navbar({ dict, lang }: NavbarProps) {
     { href: `/${lang}/for-students`, label: dict.forStudents },
     { href: `/${lang}/for-companies`, label: dict.forCompanies },
     { href: `/${lang}/contact`, label: dict.contact },
-    { href: `/${lang}/resources`, label: dict.resources },
+    { href: `/${lang}/resources`, label: dict.resources }
   ]
 
   return (
