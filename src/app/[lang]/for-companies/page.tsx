@@ -17,12 +17,13 @@ export default async function ForCompanies({
 }: ForCompaniesPageProps) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
+  const isRTL = lang === 'ar';
   const companiesDict = dict.forCompanies;
 
   return (
     <div className="w-full min-h-screen bg-white">
       <Container className="py-12">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto" dir={isRTL ? 'rtl' : 'ltr'}>
           <h1 className="text-3xl font-bold mb-6 text-[#202F49]">{companiesDict.title}</h1>
           <p className="text-lg text-gray-600 mb-12">
             {companiesDict.subtitle}
