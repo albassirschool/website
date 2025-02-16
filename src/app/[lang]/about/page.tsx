@@ -16,11 +16,12 @@ export default async function About({
 }: AboutPageProps) {
   const { lang } = await params;
   const dict = await getDictionary(lang)
+  const isRTL = lang === 'ar';
 
   return (
     <div className="w-full min-h-screen bg-white">
       <Container className="py-12">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto" dir={isRTL ? 'rtl' : 'ltr'}>
           <h1 className="text-3xl font-bold text-[#202F49] mb-6">{dict.about.title}</h1>
           <div className="prose prose-lg">
             <div className="relative h-[400px] mb-8">
