@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface CardProps {
   title: string
@@ -11,6 +12,7 @@ interface CardProps {
     src: string
     alt: string
   }
+  href?: string
 }
 
 export function Card({
@@ -20,18 +22,19 @@ export function Card({
   children,
   variant = 'dark',
   image,
+  href,
   ...props
 }: CardProps) {
-  return (
-    <div
-      className={cn(
-        'flex flex-col rounded-lg overflow-hidden',
-        variant === 'dark' ? 'bg-[#1A237E]' : 'bg-white',
-        'border border-gray-200 shadow-sm hover:shadow-md transition-shadow',
-        className
-      )}
-      {...props}
-    >
+  const content = (
+<div
+  className={cn(
+    'flex flex-col rounded-lg overflow-hidden h-full w-full',
+    variant === 'dark' ? 'bg-[#1A237E]' : 'bg-white',
+    'border border-gray-200 shadow-sm hover:shadow-md transition-shadow',
+    className
+  )}
+  {...props}
+>
       {image && (
         <div className="relative h-48 w-full">
           <Image
@@ -59,4 +62,10 @@ export function Card({
       </div>
     </div>
   )
+
+  return href ? (
+    <Link href={href}>
+      {content}
+    </Link>
+  ) : content
 }
