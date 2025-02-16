@@ -19,6 +19,7 @@ export default async function CoursePage({
 }: CoursePageProps) {
   const { lang, slug } = await params;
   const dict = await getDictionary(lang);
+  const isRTL = lang === 'ar';
   const courseData = dict.courses.coursesData[slug];
 
   if (!courseData) {
@@ -27,7 +28,7 @@ export default async function CoursePage({
 
   return (
     <Container className="py-12">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto" dir={isRTL ? 'rtl' : 'ltr'}>
         <h1 className="text-3xl font-bold mb-4 text-[#202F49]">
           {courseData.title}
         </h1>
