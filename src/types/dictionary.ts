@@ -146,7 +146,6 @@ export interface Dictionary {
       };
     };
   };
-
   forCompanies: {
     title: string;
     subtitle: string;
@@ -161,7 +160,6 @@ export interface Dictionary {
       button: string;
     };
   };
-
   forStudents: {
     title: string;
     subtitle: string;
@@ -216,5 +214,29 @@ export interface Dictionary {
       courses?: string;
       contact?: string;
     };
+  };
+  terms?: {
+    title: string;
+    sections: Array<{
+      heading: string;
+      content?: string;
+      subsections?: Array<{
+        title: string;
+        content: string;
+      }>;
+    }>;
+    lastUpdated: string;
+  };
+  privacy?: {
+    title: string;
+    sections: Array<{
+      heading: string;
+      content?: string;
+      subsections?: Array<{
+        title: string;
+        content: string;
+      }>;
+    }>;
+    lastUpdated: string;
   };
 }

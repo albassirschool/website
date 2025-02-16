@@ -15,7 +15,9 @@ export const getDictionary = async (locale: Locale): Promise<Dictionary> => {
       forStudents,
       resources,
       header,
-      footer
+      footer,
+      terms,
+      privacy
     ] = await Promise.all([
       loadModule(locale, 'pages/home'),
       loadModule(locale, 'pages/about'),
@@ -25,7 +27,9 @@ export const getDictionary = async (locale: Locale): Promise<Dictionary> => {
       loadModule(locale, 'pages/for-students'),
       loadModule(locale, 'pages/resources'),
       loadModule(locale, 'components/header'),
-      loadModule(locale, 'components/footer')
+      loadModule(locale, 'components/footer'),
+      loadModule(locale, 'pages/terms'),
+      loadModule(locale, 'pages/privacy')
     ])
 
     return {
@@ -37,7 +41,9 @@ export const getDictionary = async (locale: Locale): Promise<Dictionary> => {
       forStudents,
       resources,
       header,
-      footer
+      footer,
+      terms,
+      privacy
     } as Dictionary
   } catch (error) {
     console.error('Failed to load dictionary:', error)
