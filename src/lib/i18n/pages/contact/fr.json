@@ -5,7 +5,7 @@
     "title": "Informations de contact",
     "address": {
       "title": "Adresse",
-      "line": "Cité BELAYADHI Lot 74 Bordj Bou Arreridj"
+      "line": "Cité BELAYADHI n°93 Lot 74 Bordj Bou Arreridj"
     },
     "phone": {
       "title": "Téléphone",
@@ -17,7 +17,7 @@
     },
     "hours": {
       "title": "Heures d'ouverture",
-      "schedule": "Du dimanche au jeudi: 8h00 - 17h00"
+      "schedule": "Du samedi au jeudi: 8h00 - 16h30"
     }
   },
   "form": {
