@@ -30,7 +30,7 @@ export default async function Resources({
           <DocumentCard
             title={resourcesDict.catalog.title}
             description={resourcesDict.catalog.description}
-            downloadUrl="/documents/catalog.pdf"
+            downloadUrl="/documents/al-bassir-catalogue.pdf"
             buttonText={resourcesDict.catalog.downloadButton}
           />
         </div>
